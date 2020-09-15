@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gullberg's Wine Club</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="title-div">
+        <h1 id="title">Gullberg Wine Club</h1>
+        <p id="description">
+          Welcome to the Club! 
+          Please tell us a litte about yourself.
+        </p>
+      </div>
+      
+      <div id="container-div">
+      <!--form container-->
+        <form action="" id="survey-form">
+           <div class="form-section" id="name-email-phone">
+             <label for="name" id="name-label"> Name:
+             </label>
+             <input type="text" 
+                    id="name" 
+                    placeholder="Enter your name" 
+                    required>
+            <label for="email" id="email-label"> Email:
+             </label>
+            <input type="email" 
+                   id="email" 
+                   placeholder="Enter your email" 
+                   required>
+            <label for="number" id="number-label"> Phone: (optional)
+             </label>
+            <input type="number" 
+                   id="number" 
+                   min= "7"
+                   max = "15"
+                   placeholder="+46 ### ## ## ##">
+          </div>
+          
+     <!--Radios*/-->     
+          
+              <h5> How do you perfer that we contact you?</h5>
+            <div class="form-section" id="radio-div">
+              <div>  
+                  <label for="contact-method-email" name="contact-method"> Email                        </label>
+                  <input type="radio" 
+                       id="contact-method-email" 
+                       name="contact-method" 
+                       value="email" 
+                       checked>
+              </div>
+              <div>
+                <label for="contact-method-sms" name="contact-method"> sms 
+                </label>
+                <input type="radio" 
+                     id="contact-method-sms" 
+                     name="contact-method" 
+                     value="sms">
+              </div>
+              <div>
+                <label for="contact-method-both" name="contact-method"> Both
+                </label>
+                <input type="radio" 
+                     id="contact-method-both" 
+                     name="contact-method" 
+                     value="both">
+              </div>
+          </div>
+      <!--Dropdown-->
+          <div class="form-section" id="dropdown-div">
+           
+            <h5> Where did you first hear about us?</h5>
+            <select id="dropdown"> 
+              <option value="search">Search Engine</option>
+              <option value="Restaurant">At a restaurant</option>
+              <option value="Systemet">At System Bolaget</option>
+              <option value="other">Other</option>
+            </select>
+          </div> 
+    <!--Checkboxes-->     
+          <h5>Tell us what your interested in (check all that apply):</h5>
+          <div class="form-section" id="checkboxes">
+           
+              <div>
+                <label for="special-offers">
+                <input type="checkbox" 
+                       id="special-offers" 
+                       value="special-offers" 
+                       name="interests" 
+                       checked> Special Offers
+                </label>
+              <div>
+                <label for="new-producers">
+                  <input type="checkbox" 
+                         id="new-producers" 
+                         value="new-producers" 
+                         name="interests"> New Producers
+                </label>
+               </div>
+               <div> 
+                  <label for="natural-wine">
+                  <input type="checkbox" 
+                         id="natural-wine" 
+                         value="natural-wine" 
+                         name="interests"> Natural Wine
+                 </label>
+               <div>  
+                  <label for="champagne">
+                  <input type="checkbox" 
+                         id="champagne" 
+                         value="champagne" 
+                         name="interests"> Champagne
+                 </label>
+               </div> 
+               <div>  
+                  <label for="group-tastings">
+                  <input type="checkbox" 
+                         id="group-tastings" 
+                         value="group-tastings" 
+                         name="interests"> Group Tastings
+                 </label>
+                </div>
+                <div>
+                  <label for="wine-classes">
+                  <input type="checkbox" 
+                         id="wine-classes" 
+                         value="wine-classes" 
+                         name="interests"> Wine Classes
+                  </label>
+                 </div>
+                 <div>
+                    <label for="wine-tourism">
+                      <input type="checkbox" 
+                             id="wine-tourism" 
+                             value="wine-tourism" 
+                             name="interests"> Wine Tourism
+                   </label>
+                 </div>
+          </div>
+    <!--textarea-->   
+          
+              <div class="form-section" id="text-div">
+              <h5> Anything else you'd like to tell us?</h5>
+       
+              <textarea id="final-text" 
+                    placeholder="Enter Text Here" 
+                    ></textarea>
+               
+          </div>
+    <!--submit button-->      
+          <button id="submit" type="submit">Sign Up</button>
+          
+        </form>
+      <!--container-div-->
+      </div>
+</body>
+</html>
